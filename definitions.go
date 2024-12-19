@@ -11,7 +11,7 @@ type Request struct {
 	MaxTokens         int                  `json:"max_tokens,omitempty"`
 	Temperature       float64              `json:"temperature,omitempty"`
 	Tools             []Tool               `json:"tools,omitempty"`
-	ToolChoice        ToolChoice           `json:"tool_choice,omitempty"`
+	ToolChoice        *ToolChoice          `json:"tool_choice,omitempty"`
 	Seed              int                  `json:"seed,omitempty"`
 	TopP              float64              `json:"top_p,omitempty"`
 	TopK              int                  `json:"top_k,omitempty"`
